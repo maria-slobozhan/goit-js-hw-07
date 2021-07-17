@@ -23,5 +23,6 @@ const createGallery = (elements) => {
 };
 
 const imageEl = createGallery(images);
+console.log(imageEl);
 
-galleryList.insertAdjacentHTML("afterbegin", [...imageEl]);
+galleryList.insertAdjacentHTML("afterbegin", imageEl.join(" "));
